@@ -57,7 +57,7 @@
         <!-- featured product section -->
         <section class="mt-32 mb-32">
             <div class="max-w-8/10 mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-5">Our Featured Products</h2>
+                <h2 class="text-4xl font-bold mb-5">Our Featured Products</h2>
                 <p class="text-xl text-gray-500">There are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration in some form, by injected humour, or randomised words which don't
                     look even slightly believable.</p>
@@ -95,7 +95,42 @@
                 </div>
             </div>
         </section>
+        <!-- To make all children in a section have similar height -->
+        <!-- | Technique                                                      | Purpose                                              |
+| -------------------------------------------------------------- | ---------------------------------------------------- |
+| `items-stretch` on flex container                              | Makes both children equal in height                  |
+| `h-full` on children                                           | Allows children to stretch (if parent has a height***)  |
+| Avoid `<br>` for spacing                                       | Use Tailwind spacing utilities (`mb-6`, `space-y-4`) |
+| Use `min-h-screen` or `min-h-[600px]` for fixed section height | If you're designing a large hero/intro section       |
+ -->
 
+        <!-- Great Fresh Tea Section  -->
+         <section class="flex justify-between items-center gap-12 mb-32">
+            <!-- image container -->
+             <div class="grid grid-cols-2 grid-rows-3 gap-7">
+                <div class="bg-gradient-to-r from-orange-100 to-orange-50 rounded-xl"></div>
+                <div class="grid row-span-2 bg-amber-50 p-7 rounded-xl">
+                    <img src="images/fresh-1.png" alt="">
+                </div>
+                <div class="grid row-span-2 bg-green-50 justify-center p-7 rounded-xl">
+                    <!-- using mx-auto in this grid item makes width less then other 3 items as this image is smaller in width. mx-auto takes margin to fit-content. thats why to make this image centered we used justify center as it work in both flex/grid.   -->
+                    <img src="images/fresh-2.png" alt="">
+                </div>
+                <div class="bg-gradient-to-r from-green-100 to-green-50 rounded-xl"></div>
+             </div>
+             <!-- description container -->
+              <div class="max-w-3/6">
+                <h1 class="text-4xl font-bold">Great Tea, Freshly <br> Presented</h1>
+                <br>
+                <p class="text-lg text-gray-500">The meaning of gong cha is chance to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its customers because of good words of mouth and unique customized service originated from Taiwan.</p>
+                <br>
+                <h5 class="text-2xl font-semibold">Unique Taste</h5>
+                <p class="text-lg text-gray-500">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                <br>
+                <h5 class="text-2xl font-semibold">Premium Quality</h5>
+                <p class="text-lg text-gray-500">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+              </div>
+         </section>
     </main>
 
     <footer>
