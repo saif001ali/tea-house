@@ -14,15 +14,41 @@
     <!-- tailwindcss CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Link tailwind.css file to  -->
-     <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="tailwind.css">
 </head>
+<!-- <i class="fa-solid fa-arrow-right" style="transform: rotate(315deg); display: inline-block;"></i>
+ -->
 
 <body>
-    <header>
-        
-    </header>
-
-    <main>
+    <main class="max-w-xl mx-auto md:max-w-3xl lg:max-w-6xl">
+        <header>
+            <div class="md:flex">
+                <div>
+                    <h1 class="text-5xl font-bold lg:text-7xl">It's good <br> tea time at The <br> Tea House</h1>
+                    <p class="text-gray-500 text-xl w-3/4 my-8">Tea and Botanical Solutions Supplier Give Optimum
+                        Satisfaction To Your Taste Buds.</p>
+                    <button
+                        class="bg-gradient-to-r from-orange-500 to-red-500 text-xl text-white font-medium p-4 rounded-xl ">Explore
+                        More <i class="fa-solid fa-arrow-right fa-rotate-by"
+                            style="--fa-rotate-angle: 315deg;"></i></button>
+                    <!-- CSS of icon <i class="fa-solid fa-arrow-right" style="transform: rotate(315deg); display: inline-block;"></i> -->
+                </div>
+                <div class="relative">
+                    <img class="w-auto" src="images/banner.png" alt="">
+                    <div class="flex items-center shadow-lg rounded-lg bg-white p-3 absolute 
+                    md:bottom-[2.75rem] md:left-[1.75rem] 
+                    lg:bottom-[0.75rem] lg:left-[5rem]">
+                        <div>
+                            <i class="fa-solid fa-star text-3xl text-amber-300"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="md:text-xl lg:text-2xl font-semibold">5.00</h2>
+                            <p class="text-sm">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
     </main>
 
