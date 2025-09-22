@@ -57,7 +57,7 @@
         <!-- featured product section -->
         <section class="mt-32 mb-32">
             <div class="max-w-8/10 mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-5">Our Featured Products</h2>
+                <h2 class="text-5xl font-bold mb-5">Our Featured Products</h2>
                 <p class="text-xl text-gray-500">There are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration in some form, by injected humour, or randomised words which don't
                     look even slightly believable.</p>
@@ -105,9 +105,9 @@
  -->
 
         <!-- Great Fresh Tea Section  -->
-         <section class="flex justify-between items-center gap-12 mb-32">
+        <section class="md:flex md:justify-between md:items-center gap-12 mb-32">
             <!-- image container -->
-             <div class="grid grid-cols-2 grid-rows-3 gap-7">
+            <div class="grid grid-cols-2 grid-rows-3 gap-7">
                 <div class="bg-gradient-to-r from-orange-100 to-orange-50 rounded-xl"></div>
                 <div class="grid row-span-2 bg-amber-50 p-7 rounded-xl">
                     <img src="images/fresh-1.png" alt="">
@@ -117,20 +117,91 @@
                     <img src="images/fresh-2.png" alt="">
                 </div>
                 <div class="bg-gradient-to-r from-green-100 to-green-50 rounded-xl"></div>
-             </div>
-             <!-- description container -->
-              <div class="max-w-3/6">
-                <h1 class="text-4xl font-bold">Great Tea, Freshly <br> Presented</h1>
+            </div>
+            <!-- description container -->
+            <div class="mt-12 md:max-w-3/6">
+                <h1 class="text-5xl font-bold">Great Tea, Freshly <br> Presented</h1>
                 <br>
-                <p class="text-lg text-gray-500">The meaning of gong cha is chance to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its customers because of good words of mouth and unique customized service originated from Taiwan.</p>
+                <p class="text-lg text-gray-500">The meaning of gong cha is chance to provide the best tea to emperor
+                    from all possessions . It represents the highest quality and self expectation. Establishing in 2006,
+                    Gong cha had been deeply appreciated by its customers because of good words of mouth and unique
+                    customized service originated from Taiwan.</p>
                 <br>
                 <h5 class="text-2xl font-semibold">Unique Taste</h5>
-                <p class="text-lg text-gray-500">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                <p class="text-lg text-gray-500">A Unique and different style from other teapots gives a luxurious and
+                    minimalist impression</p>
                 <br>
                 <h5 class="text-2xl font-semibold">Premium Quality</h5>
-                <p class="text-lg text-gray-500">Premium Quality that makes tea more elegant and more durable when you use it.</p>
-              </div>
-         </section>
+                <p class="text-lg text-gray-500">Premium Quality that makes tea more elegant and more durable when you
+                    use it.</p>
+            </div>
+        </section>
+
+        <!-- Super Client Section  -->
+        <section class="mb-32">
+            <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-lg grid grid-cols-1 md:grid-cols-2 px-5 py-10 lg:px-16 lg:py-24">
+                <!-- text container -->
+                <div class="flex items-center justify-center">
+                    <div class="w-full md:w-6/7 text-white">
+                        <!-- when the parent container is grid the children <div> gets the width of each column and w-6/7 actually takes up space from its onw column.  -->
+                        <h1 class="text-5xl leading-16 font-semibold">Meet Our Super Clients</h1>
+                        <p class="text-lg leading-7 my-7">There are many variations of passages of Lorem Ipsum available,
+                            but the majority have suffered alteration in some form, by injected humour, or randomised words
+                            which don't look even slightly believable. </p>
+                        <button class="py-3 px-5 bg-white text-orange-500 font-semibold rounded-lg">Show All</button>
+                    </div>
+                </div>
+                <!-- image container -->
+                <div>
+                    <div class="w-full md:w-4/5 h-56 px-12 flex items-center rounded-lg bg-white relative left-5 top-5 md:left-16 lg:left-32 opacity-40">
+                        <!-- top bg card -->
+                        <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                            <img class="p-1" src="images/client.png" alt="">
+                        </div>
+                        <!-- when all <p> in one div, this div becomes one child and now making them flex wont bring all <p> horizontal as 
+                            the are not immediate child of container anymore. they all under one <div> now. -->
+                        <div>
+                            <p class="text-lg text-gray-400 my-5">We are providing the best and suitable home insurance
+                                services
+                                for
+                                the people who are interested to treatment</p>
+                            <p class="text-lg font-semibold">Ilham Yuda</p>
+                            <p class="text-lg mb-5">Businessman</p>
+                        </div>
+                    </div>
+                    <!-- middle card -->
+                    <div class="relative">                                            <!-- Z index stack higher the number is-->
+                        <div class="w-full md:w-4/5 h-56 px-12 flex items-center rounded-lg bg-white absolute z-10 -top-28">
+                            <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                                <img class="p-1" src="images/client.png" alt="">
+                            </div>
+                            <div>
+                                <p class="text-lg text-gray-400 my-5">We are providing the best and suitable home insurance
+                                    services
+                                    for
+                                    the people who are interested to treatment</p>
+                                <p class="text-lg font-semibold">Ilham Yuda</p>
+                                <p class="text-lg mb-5">Businessman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bottom bg card -->
+                    <div class="w-full md:w-4/5 h-56 px-12 flex items-center rounded-lg bg-white relative top-10 left-5 md:left-16 lg:left-32 opacity-40">
+                        <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                            <img class="p-1" src="images/client.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-lg text-gray-400 my-5">We are providing the best and suitable home insurance
+                                services
+                                for
+                                the people who are interested to treatment</p>
+                            <p class="text-lg font-semibold">Ilham Yuda</p>
+                            <p class="text-lg mb-5">Businessman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
