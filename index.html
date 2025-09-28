@@ -12,14 +12,28 @@
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/f420003a98.js" crossorigin="anonymous"></script>
     <!-- tailwindcss CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <!-- Link tailwind.css file to  -->
-    <link rel="stylesheet" href="tailwind.css">
+    <!-- <link rel="stylesheet" href="tailwind.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
+
 <!-- <i class="fa-solid fa-arrow-right" style="transform: rotate(315deg); display: inline-block;"></i>
  -->
 
-<body>
+<body class="font-manrope">
     <!-- main section -->
     <main class="max-w-xl mx-auto md:max-w-3xl lg:max-w-6xl">
         <!-- header section -->
@@ -119,7 +133,7 @@
                 <div class="bg-gradient-to-r from-green-100 to-green-50 rounded-xl"></div>
             </div>
             <!-- description container -->
-            <div class="mt-12 md:max-w-3/6">
+            <div class="mt-12 md:w-1/2">
                 <h1 class="text-5xl font-bold">Great Tea, Freshly <br> Presented</h1>
                 <br>
                 <p class="text-lg text-gray-500">The meaning of gong cha is chance to provide the best tea to emperor
@@ -315,14 +329,16 @@
                 </div>
                 <div>
                     <h5 class="text-xl font-semibold mb-10">Subscribe to our <br> newsletter</h5>
-                    <input class="w-4/6 pb-3 border-b-2 border-gray-400" type="text" placeholder="Email address" name="Email">
+                    <input class="w-4/6 bg-[#fcefe9] pb-3 border-b-2 border-gray-400" type="text" placeholder="Email address"
+                        name="Email">
                     <button class="w-7 h-7 bg-orange-600 rounded-full text-white">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                     <ul class="flex sm:justify-center md:justify-start gap-5 mt-5">
                         <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                         <li><a href="https://x.com/?lang=en"><i class="fa-solid fa-x"></i></a></li>
-                        <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i
+                                    class="fa-brands fa-square-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
